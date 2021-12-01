@@ -1,0 +1,11 @@
+.jobs-container {
+  /* border: 1px solid red; */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #000;
+  padding-right: 25px;
+  padding-left: 25px;
+}

@@ -1,0 +1,15 @@
+.jobs-container-list {
+  /* border: 1px solid blue; */
+  list-style-type: none;
+  padding-left: 0px;
+  /* width: 80%; */
+}
+/* @media screen and (max-width: 768px) {
+  .jobs-container-list {
+    max-width: 540px;
+  }
+} */
+.jobs-container {
+  display: flex;
+  justify-content: center;
+}
