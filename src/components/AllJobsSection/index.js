@@ -109,6 +109,10 @@ class ALlJobsSection extends Component {
     </div>
   )
 
+  onRefreshPage = () => {
+    this.getJobs()
+  }
+
   renderFailureView = () => (
     <div className="jobs-error-view-container">
       <img
@@ -120,12 +124,15 @@ class ALlJobsSection extends Component {
       <p className="job-failure-description">
         We cannot seem to find the page you are looking for.
       </p>
-      <button type="button">Retry</button>
+      <button type="button" onClick={this.onRefreshPage}>
+        Retry
+      </button>
     </div>
   )
 
   renderJobsList = () => {
     const {jobsList} = this.state
+    console.log(jobsList)
     const jobsListLength = jobsList.length > 0
     return jobsListLength ? (
       <div className="jobs-container">

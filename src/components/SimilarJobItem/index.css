@@ -1,0 +1,8 @@
+@media screen and (min-width: 768px) {
+  .job-link {
+    width: 30%;
+  }
+}
+.similar-job-address-container {
+  display: flex;
+}
