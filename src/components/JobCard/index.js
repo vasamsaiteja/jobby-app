@@ -33,9 +33,6 @@ const JobCard = props => {
             <MdLocationOn className="location-icon" />
             <p className="job-location">{location}</p>
           </div>
-          {/* <p>
-            <FaBriefcase /> {employmentType}
-          </p> */}
           <div className="location-container">
             <FaBriefcase className="location-icon employment-icon" />
             <p className="job-location">{employmentType}</p>
