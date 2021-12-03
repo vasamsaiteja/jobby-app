@@ -85,8 +85,7 @@ class JobItemDetails extends Component {
         skills: updatedSkillsData,
         apiStatus: apiStatusConstants.success,
       })
-    }
-    if (response.status === 404) {
+    } else {
       this.setState({
         apiStatus: apiStatusConstants.failure,
       })
@@ -112,7 +111,7 @@ class JobItemDetails extends Component {
       />
       <h1 className="job-failure-heading-text">Oops! Something Went Wrong</h1>
       <p className="job-failure-description">
-        We cannot seem to find the page you are looking for.
+        We cannot seem to find the page you are looking for
       </p>
       <button type="button" onClick={this.onRefreshPage}>
         Retry
@@ -206,12 +205,9 @@ class JobItemDetails extends Component {
               href={companyWebsiteUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="anchor-item"
+              className="anchor-item job-detail-website-url"
             >
-              <div className="job-visit-container">
-                <p className="job-detail-website-url">visit</p>
-                <IoCreateOutline className="job-details-icon-size" />
-              </div>
+              Visit <IoCreateOutline className="job-details-icon-size" />
             </a>
           </div>
           <p className="job-paragraph paragraph">{jobDescription}</p>
